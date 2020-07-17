@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>top 5!</title>
+    
+    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+    
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="styl.css" type="text/css">
+     <link rel="stylesheet" href="stylelogin.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+     
+    <style>
+        body {
+            background-image: url("mo.jpg");
+            background-size: 1000px 800px;
+
+        }
+          .submit{
+            color:black;
+          } 
+    </style>
+</head>
+
+<body>
+     <div id="header">
+        <div id="header_in">
+        
+        <h1><a href="index.html"><b>Top</b> 5!</a></h1>
+        
+        <div id="menu">
+         <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+             <li><a href="Gal.html">Gallery</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="os.html">Oscar Store</a></li>
+             <li><a href="sh.html">Shadows</a></li>
+            <li><a href="lo.html">Login/Register</a></li>            
+         </ul>
+        </div>
+        
+        </div>
+    </div>
+      <div class="main">
+
+        <div class="container">
+            <div class="signup-content">
+                <form method="POST" id="signup-form" class="signup-form">
+                    <h2>Log in </h2>
+                    <br>
+                    <br>
+                 
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="name" id="name" placeholder="UserNames"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-input" name="password" id="password" placeholder="Password"/>
+                        <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                    </div>
+                    <div class="form-group1">
+                        <button id="submit" onclick="logIn()"><a href="#" class="submit-link submit">Sign in</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>  
+
+     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+     <script type="text/javascript" src="Jslogin.js"></script>
+
+     <script type="text/javascript" src="FactoryFunctions.js"></script>
+    
+    </body>
+    </html>
