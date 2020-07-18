@@ -1,40 +1,67 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
     <title>top 5!</title>
-    
-    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
-    
+     <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
     <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="styl.css" type="text/css">
-        
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
+    <style type="text/css">
+      #vid{
+       margin-left: auto;
+    margin-right: auto;
+    display: block;
+      }
+      body{
+        background-color: black;
+      }
+    </style>
 </head>
-
 <body>
-    
-    
-    <div id="header">
+     <div id="header">
         <div id="header_in">
         
-        <h1><a href="index.html"><b>Top</b> 5!</a></h1>
-        
+        <h1><a href="index.html"><b>Top 5!</b></a></h1>
         <div id="menu">
          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
              <li><a href="Gal.html">Gallery</a></li>
+             <li><a href="os.html">Oscar's Store</a></li>
+             <li><a href="seifSection.html">Shadows</a></li>
              <li><a href="about.html">About</a></li>
-             <li><a href="os.html">Oscar Store</a></li>
-             <li><a href="sh.html">Shadows</a></li>
-            <li><a href="lo.html">Login/Register</a></li>            
+            <li><a href="lo.html">Login</a></li>            
          </ul>
         </div>
-        
         </div>
     </div>
-    
-    </body>
-    </html>
+<video id="vid" class="center"  src="seif.mp4" >
+    <audio src="helloDarkness.mp3"></audio>
+</video>
+<script type="text/javascript">
+    var video = document.querySelector('video');
+if (video) {
+  window.addEventListener('keydown', function (event) {
+    var key = event.which || event.keyCode;
+    if (key === 32) { 
+      event.preventDefault();
+      video.paused ? video.play() : video.pause(); 
+    }
+  });
+}
+video.volume=0;
+</script>
+<script type="text/javascript">
+    var audio = document.querySelector('audio');
+if (audio) {
+  window.addEventListener('keydown', function (event) {
+    var key = event.which || event.keyCode;
+    if (key === 32) { 
+      event.preventDefault();
+      audio.paused ? audio.play() : audio.pause(); 
+    }
+  });
+}
+</script>
+</body>
+</html>

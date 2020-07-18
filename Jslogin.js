@@ -5,7 +5,7 @@ function logIn(){
       for(var i=0;i<user.length;i++){
         if((username===user[i].name+"-"+user[i].surname)&&(password===user[i].password)) {
            confirm('Welcome M./Mr :'+user[i].name+" "+user[i].surname);
-           location.replace("file:///C:/Users/21620/Desktop/Yassine/index.html")
+           location.replace("file:///C:/Users/21620/Desktop/Yassine/Project-2/index.html")
             return true;
         }
     } 

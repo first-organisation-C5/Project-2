@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sam</title>
+  <style>
+    body {
+      background-image: url('zak.jpg');
+    }
+  </style>
+</head>
+<body>
+	<audio id='audio' src=five.mp3 controls hidden="true"></audio>
+	
+	<img id="pic"src="sam.jpg" alt="item1">
+	<img id="pic2"src="anger.jpg" alt="item1">
+<script type="text/javascript">
+	$("#sam").onclick(function(){
+    $("#pic #pic2").slideToggle()
+})
+</script>
+<script type="text/javascript">
+	var audio = document.querySelector('audio');
+if (audio) {
+  window.addEventListener('keydown', function (event) {
+    var key = event.which || event.keyCode;
+    if (key === 32) { 
+      event.preventDefault();
+      audio.paused ? audio.play() : audio.pause(); 
+    }
+  });
+}
+</script>
+</body>
+</html>
